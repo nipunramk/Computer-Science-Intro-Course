@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Introduction to Computer Science</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+a{text-decoration:none}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="example.html" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="videos.html" class="w3-hover-white">Videos</a></li>
+  <li class="w3-hide-small"><a href="practice.html" class="w3-hover-white">Practice</a></li>
+
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4><b>Outside Resources</b></h4>
+  <a href="https://inst.eecs.berkeley.edu/~cs61a/fa15/" class="w3-hover-black">Berkeley CS61A Website</a>
+  <a href="http://composingprograms.com/" class="w3-hover-black">Composing Programs Textbook</a>
+  <a href="http://composingprograms.com/projects.html" class="w3-hover-black">Cool Projects</a>
+  <a href="http://docs.python-guide.org/en/latest/" class="w3-hover-black">More on Python</a>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Practice Problems</h1>
+      <p>Download zip file of practice problems <a href="Practice.zip" download="Practice.zip" style = "color: blue">here</a>
+        <br> 
+        <br>
+        Download zip file of solutions to practice problems <a href="Solutions.zip" download="Solutions.zip" style = "color: blue">here</a>
+        <br>
+        <br>
+        Once you have downloaded the zip file, open it, extract (right click --> extract all for Windows users, for Mac and Linux users, you can actually unzip from the terminal. See this <a href="https://inst.eecs.berkeley.edu/~cs61a/fa15/lab/lab00/#extracting-starter-files" style = "color: blue">link</a> for more information) to a particular directory, open the folder, and then open the appropriate python file in your text editor. 
+        <br>
+        <br>
+        You may find it useful to work on functions one at a time and test individually. The best way to do that is to comment everything else but the problem you are working on and then test the function using the provided doctests. To comment and uncomment lines use the following shortcut: Ctrl + '/'. I also have videos of walkthroughs of me going through how to solve these problems and reach the solution. Look below for more details on that. 
+
+        <h3 class="w3-text-teal">Practice Problems - Set 1</h3>               
+        Practice problems relating to fundamentals of programming, such as conditional statements, expressions, defining functions, and iteration. You can find the video walkthrough for this set of practice problems in <a href="https://www.youtube.com/watch?v=1__as7hagzk&list=PLIPC-nzz92U1sA6qTdVN7Uvml1VLStVk5&index=1#t=5m13s" style = "color: blue">Video 6</a>
+
+        <h3 class="w3-text-teal">Practice Problems - Set 2</h3>               
+        Practice problems relating to higher order functions and recursion, with various levels of difficulty. You can find the video walkthrough for this set of practice problems in <a href="https://www.youtube.com/watch?v=TRpWL6ZEBjA&index=2&list=PLIPC-nzz92U1g8ifNMcHXBF5TaKNynWAk#t=1m57s" style = "color: blue">Video 11</a>
+
+        <h3 class="w3-text-teal">Practice Problems - Set 3</h3>               
+        Practice problems relating to sequences including lists, dictionaries, ranges, and strings. You can find the video walkthrough for this set of practice problems in <a href="https://www.youtube.com/watch?v=PCDj5UBMJnY&list=PLIPC-nzz92U2wQVD3Ack1kmxVlIoPUe0u&index=1" style = "color: blue">Video 15</a>
+
+        <h3 class="w3-text-teal">Practice Problems - Set 4</h3>               
+        Practice problems relating to object oriented programming, linked lists, iterators, runtime, and trees. You can find the video walkthrough for this set of practice problems in <a href="https://www.youtube.com/watch?v=gW1cekBsAII&list=PLIPC-nzz92U3x-NlA-vkVvEjxZ29lXEm8&index=1" style = "color: blue">Video 22</a>
+
+
+
+
+      </p>
+        
+    </div>
+
+  </div>
+
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h5>Check out what people have to say about the importance of computer science <a href = "https://www.youtube.com/watch?v=STRPsW6IY8k" style = "color: red">here<a/></h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Authored by Nipun Ramakrishnan</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
